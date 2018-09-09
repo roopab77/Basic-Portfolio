@@ -1,7 +1,6 @@
 body{
 
   font-family: 'Source Serif Pro', serif;
-
 	color: #777777;
 }
 
@@ -48,10 +47,10 @@ footer {
 
 nav {
 	float: right;
-}
+ }
 
 nav ul {
-	padding: 30px 0;
+	padding: 10px 0;
 }
 
 
@@ -69,18 +68,13 @@ nav ul li a {
 	padding: 5px 8px;
 	color: #777777;
 	text-decoration: none;
-	-webkit-transition:  0.5s ease-in-out;
-    -moz-transition:  0.5s ease-in-out;
-    -ms-transition:  0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+	 
 }
 
 nav ul li a:hover { 
 	color: #fff;
 	background: #4aaaa5;
 } 
-
 
 
 #wrap_text
@@ -111,6 +105,7 @@ h1.title
 }
 
 #sub_content {
+	width: 100%;
 	float: left; 
 	background: #fff; 
 	padding: 30px;
@@ -130,19 +125,82 @@ h1.title
 h2:hover{
 	color: red;
 }
-#profile_image1, #profile_image3, #profile_image5{
-		float: left;
-		margin: 0 15px 15px 0;
-	max-width: 400px;
-	max-height: 400px;
-	}
-
-#profile_image2, #profile_image4
-{
-	 
-	margin: 15px 0 0 15px ;
-	max-width: 400px;
-	max-height: 400px;
+ 
+li.item1, li.item2, li.item3,li.item4,li.item5, li.item6 {
+	display: inline-block;
+	width: 275px;
+	height: 206px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 10px;
 }
 
+
+li.item1 {
+	background-image: url(../images/Garden1.jpg);
+	float: left;
+
+}
+
+li.item2 {
+	background-image: url(../images/Garden2.jpg);
+	float: right;
+}
+
+li.item3 {
+	background-image: url(../images/Garden3.jpg);
+	float: left;
+
+}
+
+li.item4 {
+	background-image: url(../images/Garden4.jpg);
+	float: right;
+}
+ 
+li.item5 {
+	background-image: url(../images/Garden5.jpg);
+	float: left;
+}
+
+li.item6 {
+	background-image: url(../images/flowers.jpg);
+	float: right;
+}
+
+label {
+	display: block;
+	font-size: 18px;
+}
+
+input[type="text"], input[type="email"] {
+	width: 100%;
+	margin: 4px 0 10px 0;
+	height: 30px;
+ 
+	font-size: 15px;
+	padding: 4px 8px;
+}
+
+textarea {
+	width: 100%;
+	margin-top: 4px; 
+	font-size: 15px;
+	padding: 4px 8px;
+}
+
+input[type="submit"] {
+	background: #4aaaa5;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 20px;
+	border: none;
+	 
+}
+
+input[type="submit"]:hover {
+	background: #ddd;
+	color: #4aaaa5;
+}
 
