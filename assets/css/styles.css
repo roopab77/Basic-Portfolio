@@ -2,6 +2,8 @@ body{
 
   font-family: 'Source Serif Pro', serif;
 	color: #777777;
+
+ 
 }
 
 h1{
@@ -14,7 +16,7 @@ h2{
 	
 	font-family: "Georgia", Times, Times New Roman, serif;
 	font-size: 25px;
-	padding: 20px;
+	margin-bottom: 20px;
 }
 p {
 	margin-bottom: 25px;
@@ -22,8 +24,9 @@ p {
 }
 
 header {
+
 	align-content: center;
-	background: #fff;	
+	background: #fff;		
   width: 100%;
 	display: block; 
 	margin-bottom: 1px; 
@@ -105,12 +108,12 @@ h1.title
 }
 
 #sub_content {
-	width: 100%;
-	float: left; 
+	 
+	 
 	background: #fff; 
 	padding: 30px;
 	margin-bottom: 200px;
-	border: 1px solid #dddddd;
+	border: 0px solid #dddddd;
 	position: relative;
 }
 
@@ -136,37 +139,35 @@ li.item1, li.item2, li.item3,li.item4,li.item5, li.item6 {
 	margin: 10px;
 }
 
-
 li.item1 {
 	background-image: url(../images/Garden1.jpg);
-	float: left;
+ 
 
 }
 
 li.item2 {
 	background-image: url(../images/Garden2.jpg);
-	float: right;
+	 
 }
 
 li.item3 {
 	background-image: url(../images/Garden3.jpg);
-	float: left;
+	 
 
 }
 
 li.item4 {
 	background-image: url(../images/Garden4.jpg);
-	float: right;
 }
  
 li.item5 {
 	background-image: url(../images/Garden5.jpg);
-	float: left;
+	 
 }
 
 li.item6 {
 	background-image: url(../images/flowers.jpg);
-	float: right;
+	 
 }
 
 label {
@@ -174,9 +175,30 @@ label {
 	font-size: 18px;
 }
 
+/* Adding animation to button */
+.submit-button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.submit-button:hover {background-color: #3e8e41}
+
+.submit-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 input[type="text"], input[type="email"] {
 	width: 100%;
-	margin: 4px 0 10px 0;
+	 margin: 4px 0 10px 0;
 	height: 30px;
  
 	font-size: 15px;
@@ -202,5 +224,82 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	background: #ddd;
 	color: #4aaaa5;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 980px) {
+	body {
+		height: fit-content;
+		overflow: flow;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body{
+		height: fit-content;
+		overflow: flow;
+	}
+	 
+	input[type="text"], input[type="email"] {
+		width: 90%;
+		margin: 4px 4px 10px 3px;
+	}
+
+	#main{
+		width: fit-content;
+	}
+	#subcontent
+	{
+		height: fit-content;
+		padding:10px;
+		border: 0px;
+	}
+	textarea{
+		width: 90%;
+
+	}
+}
+
+@media only screen and (max-width: 640px) {
+
+	body{
+		height: fit-content;
+		overflow: scroll;
+	}
+	nav {
+			
+		float: none;
+	}
+	p{
+		font-size: 14px;
+	}
+	#profile_image
+{
+	max-width: 200px;
+}
+
+li.item1, li.item2, li.item3,li.item4,li.item5, li.item6
+{
+	display:list-item;		 
+}
+
+	input[type="text"], input[type="email"] {
+		width: fit-content;
+		margin: 4px 4px 10px 3px;
+	}
+
+	#main{
+		width: fit-content;
+	}
+	#subcontent
+	{
+		height: fit-content;
+		padding:10px;
+		border: 0px;
+	}
+	textarea{
+		width: fit-content;
+
+	}
 }
 
